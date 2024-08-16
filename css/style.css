@@ -191,3 +191,97 @@ td {
   font-size: 18px;
   color: #fff;
 }
+
+#copyright {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  background: linear-gradient(90deg, #009c3b, #ffdf00);
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  z-index: 10;
+}
+
+#copyright a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ffdf00, #009c3b);
+  background-clip: text;
+}
+
+#copyright a:hover {  
+  background: linear-gradient(90deg,  #009c3b, #ffdf00);
+}
+
+/* Para telas menores que 768px */
+@media (max-width: 768px) {
+  .secao-tabela {
+    padding: 0 10px;
+  }
+
+  .tabela {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .tabela thead,
+  .tabela tbody,
+  .tabela th,
+  .tabela td,
+  .tabela tr {
+    display: block;
+  }
+
+  .tabela th {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .tabela td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+    text-align: right;
+  }
+
+  .tabela td::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45%;
+    padding-left: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .tabela td:nth-of-type(1)::before {
+    content: "Times";
+  }
+
+  .tabela td:nth-of-type(2)::before {
+    content: "Temporadas";
+  }
+
+  .tabela td:nth-of-type(3)::before {
+    content: "Jogos";
+  }
+
+  .tabela td:nth-of-type(4)::before {
+    content: "Gols";
+  }
+
+  .tabela td:nth-of-type(5)::before {
+    content: "Assistências";
+  }
+
+  .tabela td:nth-of-type(6)::before {
+    content: "Títulos";
+  }
+}
